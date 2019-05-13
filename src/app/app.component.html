@@ -1,20 +1,241 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container-fluid">
+  <div class="navbar-header">
+    <a class="navbar-brand text margin-header">TRAVEL THAILAND</a>
+  </div>
+  <div class="collapse navbar-collapse" id="myNavbar">
+  </div>
+</div>
+</nav>
+
+  <div  class="container-fluid margin">
+      <div class="row">
+        <div class="col-sm-8">
+          <h2 class="text">Tourists from Overseas in 2010-2016</h2><br>
+
+          <div class="row margin-top-region">
+         
+              <div class="col">
+                <h4 class="region-name">Asia</h4></div>
+                <div class="col">
+                    <h4 class="region-name">Europe</h4></div>
+                    <div class="col">
+                        <h4 class="region-name">Americas</h4></div>
+                        <div class="col">
+                            <h4 class="region-name">Oceania</h4></div>
+                            <div class="col">
+                                <h4 class="region-name">Africa</h4></div>
+      </div>
+          <div class="row margin-top-region">
+         
+                <div class="col">
+                    <img src="./assets/images/asia.png" class="region-img img-responsive">
+                  <h2 class="text-region">116.54 M</h2></div>
+                <div class="col">
+                    <img src="./assets/images/europe.png" class="region-img img-responsive">
+                  <h2 class="text-region">39.59 M</h2>
+                </div>
+                <div class="col">
+                    <img src="./assets/images/america.png" class="region-img img-responsive">
+                    <h2 class="text-region">7.81 M</h2>
+                  </div>
+                <div class="col">
+                    <img src="./assets/images/oceania.png" class="region-img img-responsive">
+                    <h2 class="text-region">6.56 M</h2>
+                  </div>
+                <div class="col">
+                    <img src="./assets/images/africa.png" class="region-img img-responsive">
+                    <h2 class="text-region">1.08 M</h2>
+                </div>
+        </div>
+        </div>
+        <div class="col-sm-4 margin-pie">
+            <apx-chart id="part-to-whole-region" 
+            [chart]="chart_pie" 
+            [labels]="labels_region" 
+            [responsive]="responsive"
+            [title]="title_pie"
+            [series]="series_pie">
+          </apx-chart>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-fluid bg-grey">
+        <h2 class="text margin-top-region text-center">Tourists from Overseas in 2010-2016</h2><br>
+      <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+            <apx-chart id="time-series-bar" 
+            [series]="series_time_series" 
+            [chart]="chart_bar" 
+            [title]="title_time_series" 
+            [xaxis]="xaxis_time_series" 
+            [yaxis]="yaxis_time_series">
+          </apx-chart>
+          </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <apx-chart id="time-series-line" 
+                            [series]="series_time_series_europe" 
+                            [chart]="chart_line" 
+                            [title]="title_time_series_europe" 
+                            [xaxis]="xaxis_time_series"
+                            [yaxis]="yaxis_time_series"
+                            [colors]="colors_line_europe">
+                  </apx-chart>
+                 </div>
+                </div>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col">
+                      <div class="card">
+                          <div class="card-body">
+                              <apx-chart id="time-series-line" 
+                              [series]="series_time_series_america" 
+                              [chart]="chart_line" 
+                              [title]="title_time_series_america" 
+                              [xaxis]="xaxis_time_series"
+                              [yaxis]="yaxis_time_series"
+                              [colors]="colors_line_america">
+                    </apx-chart>
+                   </div>
+                  </div>
+                  </div>
+                </div>
+      </div>
+        
+      </div>
+    </div>
+    
+    <div  class="container-fluid text-center">
+        <h2 class="text margin-top-region text-center">Tourists from Overseas in 2010-2016</h2><br>
+
+      <div class="container">
+          <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img" src="./assets/images/grand.jpg">
+                            <div class="card-body">
+                              <h2 class="card-text text">The Grand Palace</h2>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img" src="./assets/images/wat-arun.jpg">
+                            <div class="card-body">
+                              <h2 class="card-text text">Temple of Dawn</h2>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+              2 of 2
+            </div>
+          </div>
+        </div>
+
+   
+      
+     
+    
+    </div>
+  
+    <div class="container-fluid text-center bg-grey">
+      <h2>Portfolio</h2><br>
+     
+      
+    </div>
+    
+   
+    <div class="container-fluid">
+      <div class="text-center">
+        <h2>Pricing</h2>
+        <h4>Choose a payment plan that works for you</h4>
+      </div>
+    
+    </div>
+    
+    <!-- Container (Contact Section) -->
+    <div  class="container-fluid bg-grey">
+      <h2 class="text-center">CONTACT</h2>
+      <div class="row">
+        
+     
+      </div>
+    </div>
+    
+  
+<!-- 
+<div class="row">
+  <div class="col-sm-8">
+
+    <div class="card">
+      <div class="card-body center">
+      
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-sm-4">
+      <div class="card">
+          <div class="card-body">
+              <apx-chart id="part-to-whole-region" 
+              [chart]="chart_pie" 
+              [labels]="labels_region" 
+              [responsive]="responsive"
+              [title]="title_pie"
+              [series]="series_pie">
+            </apx-chart>
+          </div>
+        </div>
+   
+
+  </div>
+</div> -->
+
+<!-- <apx-chart id="time-series-bar" 
+  [series]="series_time_series" 
+  [chart]="chart_bar" 
+  [title]="title_time_series" 
+  [xaxis]="xaxis_time_series" 
+  [yaxis]="yaxis_time_series">
+</apx-chart>
+
+<apx-chart id="time-series-line" 
+  [series]="series_time_series" 
+  [chart]="chart_line" 
+  [title]="title_time_series" 
+  [xaxis]="xaxis_time_series"
+  [yaxis]="yaxis_time_series">
+</apx-chart>
+
+<apx-chart id="part-to-whole-region" 
+  [chart]="chart_pie" 
+  [labels]="labels_region" 
+  [responsive]="responsive"
+  [title]="title_pie"
+  [series]="series_pie">
+</apx-chart>
+
+<apx-chart id="deviation"
+  [chart]="chart_devi" 
+  [legend]="legend_devi" 
+  [title]="title_devi" 
+  [series]="series_devi" 
+  [xaxis]="xaxis_devi" 
+  [yaxis]="yaxis_devi">
+</apx-chart> -->
