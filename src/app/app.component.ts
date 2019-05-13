@@ -146,12 +146,15 @@ export class AppComponent {
 
   title_devi = {
     text: 'Difference of Tourists in China and Hongkong Compared to Japan (2010-2016)',
-    align: 'center'
+    align: 'center',
+    style: {
+      fontSize: 16,
+    }
   };
 
   chart_devi = {
-    height: 800,
-    width: 800,
+    height: 600,
+    width: 650,
     fontFamily: 'Nunito'
   };
 
@@ -184,6 +187,9 @@ export class AppComponent {
   yaxis_devi = {
     title: {
         text: 'Difference of Tourists (%)',
+    },
+    style: {
+      fontSize: 14,
     }
   };
 
@@ -191,7 +197,10 @@ export class AppComponent {
     title: {
       text: 'Years',
   },
-    categories: [ 2010, 2011, 2012, 2013, 2014, 2015, 2016]
+    categories: [ 2010, 2011, 2012, 2013, 2014, 2015, 2016],
+    style: {
+      fontSize: 14,
+    }
   }
 
   legend_devi = {
@@ -206,4 +215,50 @@ export class AppComponent {
   /** distribution */
   /** correlation */
   /** geo */
+
+  chart = {
+    title: 'GeoChart',
+    type: 'GeoChart',
+    columnNames: ['Country', 'Tourists'],
+    data: [
+            ['Brunei', 78262],
+            ['Cambodia', 3086608],
+            ['Indonesia', 3205735],
+            ['Laos', 7251380],
+            ['Malaysia', 19739900],
+            ['Myanmar', 1314652], 
+            ['Philippines', 2083269],
+            ['Singapore', 5824416],
+            ['Singapore', 4370304],
+            ['Philippines', 700],
+            ['China', 31630027],
+            ['Hong Kong', 3695757],
+            ['Japan', 9102856],
+            ['Korea', 8245240],
+            ['Taiwan', 3185941],
+            ['Egypt', 162446],
+            ['Israel', 936927],
+            ['Kuwait', 416879],
+            ['Saudi Arabia', 114888],
+            ['UAE', 823859],
+            ['Bangladesh', 584383],
+            ['India', 6935485],
+            ['Nepal', 207438],
+            ['Pakistan', 519091],
+            ['SriLanka', 473850]
+    ],
+    roles: [],
+    options: {
+      region: '142',
+      colorAxis: {
+        colors: ['#cd2626', '#fff1dd', '#39E6A5']
+      },
+      backgroundColor: '#c6e2ff',
+    },
+    legend: {
+      fontName: 'Nunito'
+    }
+      };
+
+
 };
