@@ -217,7 +217,7 @@ export class AppComponent {
   
   chart_distri = {
     height: 450,
-    width: 650,
+    width: 600,
     fontFamily: 'Nunito',
     type: 'candlestick'
   };
