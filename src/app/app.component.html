@@ -1,3 +1,5 @@
+<!-- done -->
+
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -7,6 +9,8 @@
         </div>
     </div>
 </nav>
+
+<!-- part-to-whole -->
 
 <div class="container-fluid margin">
     <div class="row">
@@ -51,112 +55,44 @@
             </div>
         </div>
         <div class="col-sm-4 margin-pie">
-            <apx-chart id="part-to-whole-region" [chart]="chart_pie" [labels]="labels_region" [responsive]="responsive" [title]="title_pie" [series]="series_pie">
+            <apx-chart id="part-to-whole-region" [responsive]="responsive" [chart]="chart_pie" [labels]="labels_region" [responsive]="responsive" [title]="title_pie" [series]="series_pie">
             </apx-chart>
         </div>
     </div>
 </div>
-
-
    
 
 <div class="container-fluid bg-grey">
-    <h2 class="text margin-top-region text-center">Tourists from Overseas in 2010-2016</h2>
-
-
-
-    <!-- <div class="row">
+    <h2 class="text margin-top-region text-center">Tourists from Asia in 2010-2016</h2>
+ <div class="row">
         <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <apx-chart id="time-series-bar" [series]="series_time_series" [chart]="chart_bar" [title]="title_time_series" [xaxis]="xaxis_time_series" [yaxis]="yaxis_time_series">
+            </div>
+        <div class="col margin-top-region">
+                    <apx-chart id="time-series-bar" [responsive]="responsive" [series]="series_time_series" [chart]="chart_bar" [title]="title_time_series" [xaxis]="xaxis_time_series" [yaxis]="yaxis_time_series">
                     </apx-chart>
-                </div>
-            </div>
         </div>
         <div class="col">
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <apx-chart id="time-series-line" [series]="series_time_series_europe" [chart]="chart_line" [title]="title_time_series_europe" [xaxis]="xaxis_time_series" [yaxis]="yaxis_time_series" [colors]="colors_line_europe">
-                            </apx-chart>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <apx-chart id="time-series-line" [series]="series_time_series_america" [chart]="chart_line" [title]="title_time_series_america" [xaxis]="xaxis_time_series" [yaxis]="yaxis_time_series" [colors]="colors_line_america">
-                            </apx-chart>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-
-    </div> -->
+    </div> 
 </div>
 
-
 <div class="container-fluid text-center">
-    <h2 class="text margin-top-region text-center">Tourists from Overseas in 2010-2016</h2>
+    <h2 class="text margin-top-region text-center">Tourists from Europe and Americas in 2010-2016</h2>
     <br>
-
-    <div class="container">
-        <div class="row">
+    <div class="row">
             <div class="col">
-                <div class="row">
-                    <div class="col">
-                        <div class="card">
-                            <img class="card-img" src="./assets/images/grand.jpg">
-                            <div class="card-body">
-                                <h2 class="card-text text">The Grand Palace</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img class="card-img" src="./assets/images/wat-arun.jpg">
-                            <div class="card-body">
-                                <h2 class="card-text text">Temple of Dawn</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col">
-                        <div class="card margin-top-region">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col">
-                                        <img src="./assets/images/china.png" class="region-img img-responsive">
-                                    </div>
-                                    <div class="col">
-                                        <h2 class="text-region margin-china">31.63 M</h2></div>
-                                    <div class="col">
-                                        <img src="./assets/images/paifang.png" class="region-img img-responsive">
-                                    </div>
-                                </div>
-                                <h2 class="text">Thailand has the most tourists from China.</h2>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-
-                    <div style="width: 1200px; height: 0px"></div>
-
-                </div>
-
+                 </div>
+            <div class="col">
+                    <apx-chart id="time-series-line" [series]="series_time_series_europe" [chart]="chart_line" [title]="title_time_series_europe" [xaxis]="xaxis_time_series" [yaxis]="yaxis_time_series" [colors]="colors_line_europe">
+                        </apx-chart>
             </div>
-
-        </div>
+            <div class="col">
+                    <apx-chart id="time-series-line" [series]="series_time_series_america" [chart]="chart_line" [title]="title_time_series_america" [xaxis]="xaxis_time_series" [yaxis]="yaxis_time_series" [colors]="colors_line_america">
+                        </apx-chart>
+            </div>
+            <div class="col">
+               </div>
+            
     </div>
 
 </div>
@@ -167,7 +103,13 @@
     <div class="row">
         <div class="col"></div>
         <div class="col">
-            <google-chart width="700" [title]="chart.title" [type]="chart.type" [data]="chart.data" [columnNames]="chart.columnNames" [roles]="chart.roles" [options]="chart.options">
+            <google-chart width="700" 
+            [title]="chart.title" 
+            [type]="chart.type" 
+            [data]="chart.data" 
+            [columnNames]="chart.columnNames" 
+            [roles]="chart.roles" 
+            [options]="chart.options">
             </google-chart>
         </div>
         <div class="col"></div>
@@ -179,14 +121,7 @@
     <div class="text-center">
         <h2 class="text margin-top-region text-center">Deviation</h2>
 
-        <apx-chart id="deviation"
-  [chart]="chart_devi" 
-  [legend]="legend_devi" 
-  [title]="title_devi" 
-  [series]="series_devi" 
-  [xaxis]="xaxis_devi" 
-  [yaxis]="yaxis_devi">
-</apx-chart>
+       
 
     </div>
 
@@ -201,7 +136,7 @@
 </div>
 
 
-<apx-chart id="time-series-bar" [series]="series_time_series" [chart]="chart_bar" [title]="title_time_series" [xaxis]="xaxis_time_series" [yaxis]="yaxis_time_series">
+ <!-- <apx-chart id="time-series-bar" [series]="series_time_series" [chart]="chart_bar" [title]="title_time_series" [xaxis]="xaxis_time_series" [yaxis]="yaxis_time_series">
     </apx-chart>
 
 <apx-chart id="time-series-line" [series]="series_time_series_europe" [chart]="chart_line" [title]="title_time_series_europe" [xaxis]="xaxis_time_series" [yaxis]="yaxis_time_series" [colors]="colors_line_europe">
@@ -209,3 +144,25 @@
 
     <apx-chart id="time-series-line" [series]="series_time_series_america" [chart]="chart_line" [title]="title_time_series_america" [xaxis]="xaxis_time_series" [yaxis]="yaxis_time_series" [colors]="colors_line_america">
         </apx-chart>
+
+        <apx-chart id="deviation"
+        [chart]="chart_devi" 
+        [legend]="legend_devi" 
+        [title]="title_devi" 
+        [series]="series_devi" 
+        [xaxis]="xaxis_devi" 
+        [yaxis]="yaxis_devi">
+      </apx-chart> 
+
+      <apx-chart id="china-distri" [series]="series_distri" [chart]="chart_distri" [title]="title_distri" [xaxis]="xaxis_distri" [yaxis]="yaxis_distri" [plotOptions]="plotOptions">
+        </apx-chart>
+
+        <apx-chart id="est-asia-distri" [series]="series_est_asia" [chart]="chart_est_asia" [title]="title_est_asia" [xaxis]="xaxis_est_asia" [yaxis]="yaxis_est_asia" [plotOptions]="plotOptions_est_asia" [dataLabels]="dataLabels_est_asia">
+            </apx-chart> 
+
+            <apx-chart id="est-asia-distri-normalize" [series]="series_est_asia_normalize" [chart]="chart_est_asia" [title]="title_est_asia" [xaxis]="xaxis_est_asia" [yaxis]="yaxis_est_asia_normalize" [plotOptions]="plotOptions_est_asia" [dataLabels]="dataLabels_est_asia">
+            </apx-chart>  -->
+        
+            <!-- <apx-chart id="corre" [series]="series_corre" [chart]="chart_corre" [title]="title_est_asia" [xaxis]="xaxis_corre" [yaxis]="yaxis_corre" [plotOptions]="plotOptions_est_asia" [dataLabels]="dataLabels_est_asia">
+            </apx-chart>  -->
+        
