@@ -216,7 +216,7 @@ export class AppComponent {
   /** distribution */
   
   chart_distri = {
-    height: 500,
+    height: 450,
     width: 650,
     fontFamily: 'Nunito',
     type: 'candlestick'
