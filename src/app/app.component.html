@@ -17,36 +17,36 @@
             <div class="row margin-top-region">
 
                 <div class="col">
-                    <h4 class="region-name">Asia</h4></div>
+                    <h6 class="region-name">Asia</h6></div>
                 <div class="col">
-                    <h4 class="region-name">Europe</h4></div>
+                    <h6 class="region-name">Europe</h6></div>
                 <div class="col">
-                    <h4 class="region-name">Americas</h4></div>
+                    <h6 class="region-name">Americas</h6></div>
                 <div class="col">
-                    <h4 class="region-name">Oceania</h4></div>
+                    <h6 class="region-name">Oceania</h6></div>
                 <div class="col">
-                    <h4 class="region-name">Africa</h4></div>
+                    <h6 class="region-name">Africa</h6></div>
             </div>
             <div class="row margin-top-region">
 
                 <div class="col">
                     <img src="./assets/images/asia.png" class="region-img img-responsive">
-                    <h2 class="text-region">116.54 M</h2></div>
+                    <h2 class="text-region ">116.54 M</h2></div>
                 <div class="col">
                     <img src="./assets/images/europe.png" class="region-img img-responsive">
-                    <h2 class="text-region">39.59 M</h2>
+                    <h2 class="text-region ">39.59 M</h2>
                 </div>
                 <div class="col">
                     <img src="./assets/images/america.png" class="region-img img-responsive">
-                    <h2 class="text-region">7.81 M</h2>
+                    <h2 class="text-region ">7.81 M</h2>
                 </div>
                 <div class="col">
                     <img src="./assets/images/oceania.png" class="region-img img-responsive">
-                    <h2 class="text-region">6.56 M</h2>
+                    <h2 class="text-region ">6.56 M</h2>
                 </div>
                 <div class="col">
                     <img src="./assets/images/africa.png" class="region-img img-responsive">
-                    <h2 class="text-region">1.08 M</h2>
+                    <h2 class="text-region ">1.08 M</h2>
                 </div>
             </div>
         </div>
@@ -57,10 +57,15 @@
     </div>
 </div>
 
+
+   
+
 <div class="container-fluid bg-grey">
     <h2 class="text margin-top-region text-center">Tourists from Overseas in 2010-2016</h2>
-    <br>
-    <div class="row">
+
+
+
+    <!-- <div class="row">
         <div class="col">
             <div class="card">
                 <div class="card-body">
@@ -92,8 +97,9 @@
             </div>
         </div>
 
-    </div>
+    </div> -->
 </div>
+
 
 <div class="container-fluid text-center">
     <h2 class="text margin-top-region text-center">Tourists from Overseas in 2010-2016</h2>
@@ -161,7 +167,7 @@
     <div class="row">
         <div class="col"></div>
         <div class="col">
-            <google-chart width="750" [title]="chart.title" [type]="chart.type" [data]="chart.data" [columnNames]="chart.columnNames" [roles]="chart.roles" [options]="chart.options">
+            <google-chart width="700" [title]="chart.title" [type]="chart.type" [data]="chart.data" [columnNames]="chart.columnNames" [roles]="chart.roles" [options]="chart.options">
             </google-chart>
         </div>
         <div class="col"></div>
@@ -195,3 +201,11 @@
 </div>
 
 
+<apx-chart id="time-series-bar" [series]="series_time_series" [chart]="chart_bar" [title]="title_time_series" [xaxis]="xaxis_time_series" [yaxis]="yaxis_time_series">
+    </apx-chart>
+
+<apx-chart id="time-series-line" [series]="series_time_series_europe" [chart]="chart_line" [title]="title_time_series_europe" [xaxis]="xaxis_time_series" [yaxis]="yaxis_time_series" [colors]="colors_line_europe">
+    </apx-chart>
+
+    <apx-chart id="time-series-line" [series]="series_time_series_america" [chart]="chart_line" [title]="title_time_series_america" [xaxis]="xaxis_time_series" [yaxis]="yaxis_time_series" [colors]="colors_line_america">
+        </apx-chart>

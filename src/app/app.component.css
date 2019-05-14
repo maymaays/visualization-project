@@ -14,7 +14,7 @@
   }
 
   .margin-pie {
-    margin-left: -30px;
+    margin-left: -100px;
   }
 
   .margin {
@@ -27,8 +27,8 @@
   }
 
   .region-img {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     text-align: center;
     margin-bottom: 50px;
   }
@@ -44,9 +44,30 @@
   .text-region {
     font-family: Nunito;
     font-weight: 800;
-    color: #4b3832;
     margin-left: 5px;
   }
+
+  .asia {
+    color: #008FFB;
+  }
+
+  .europe {
+    color: #01E296;
+  }
+
+  .america {
+    color: #FEB018;
+  }
+
+  .africa {
+    color: #775DD0;
+  }
+
+  .oceania {
+    color: #FF4560;
+  }
+
+
 
   .region-name {
     font-family: Nunito;
@@ -80,7 +101,7 @@
   }  
   
   .jumbotron {
-    background-color: #dec8c1;
+    background-color: rgb(255, 225, 164);
     color: #fff;
     padding: 70px 25px;
   }
@@ -88,14 +109,14 @@
     padding: 60px 50px;
   }
   .bg-grey {
-    background-color: #dec8c1;
+    background-color: rgb(255, 225, 164);
   }
   .logo-small {
-    color: #dec8c1;
+    color: rgb(255, 225, 164);
     font-size: 50px;
   }
   .logo {
-    color: #dec8c1;
+    color: rgb(255, 225, 164);
     font-size: 200px;
   }
   .thumbnail {
@@ -110,13 +131,13 @@
   }
   .carousel-control.right, .carousel-control.left {
     background-image: none;
-    color: #dec8c1;
+    color: rgb(255, 225, 164);
   }
   .carousel-indicators li {
-    border-color: #dec8c1;
+    border-color: rgb(255, 225, 164);
   }
   .carousel-indicators li.active {
-    background-color: #dec8c1;
+    background-color: rgb(255, 225, 164);
   }
   .item h4 {
     font-size: 19px;
@@ -129,7 +150,7 @@
     font-style: normal;
   }
   .panel {
-    border: 1px solid #dec8c1; 
+    border: 1px solid rgb(255, 225, 164); 
     border-radius:0 !important;
     transition: box-shadow 0.5s;
   }
@@ -137,9 +158,9 @@
     box-shadow: 5px 0px 40px rgba(0,0,0, .2);
   }
   .panel-footer .btn:hover {
-    border: 1px solid #dec8c1;
+    border: 1px solid rgb(255, 225, 164);
     background-color: #fff !important;
-    color: #dec8c1;
+    color: rgb(255, 225, 164);
   }
   .panel-heading {
     color: #fff !important;
@@ -168,7 +189,7 @@
   }
   .navbar {
     margin-bottom: 0;
-    background-color: #dec8c1;
+    background-color: rgb(255, 225, 164);
     z-index: 9999;
     border: 0;
     font-size: 15px !important;
@@ -178,10 +199,10 @@
     font-family: Nunito;
   }
   .navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
+    color: #303030 !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #dec8c1 !important;
+    color: rgb(255, 225, 164) !important;
     background-color: #fff !important;
   }
   .navbar-default .navbar-toggle {
@@ -191,7 +212,7 @@
   footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
-    color: #dec8c1;
+    color: rgb(255, 225, 164);
   }
   .slideanim {visibility:hidden;}
   .slide {

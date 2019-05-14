@@ -18,8 +18,8 @@ export class AppComponent {
 
   chart_bar = {
     type: 'bar',
-    height: 600,
-    width: 650,
+    height: 500,
+    width: 500,
     fontFamily: 'Nunito'
   };
 
@@ -66,8 +66,8 @@ export class AppComponent {
 
   chart_line = {
     type: 'line',
-    height: 270,
-    width: 650,
+    height: 350,
+    width: 500,
     fontFamily: 'Nunito'
   };
 
