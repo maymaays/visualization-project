@@ -158,7 +158,7 @@ export class AppComponent {
   };
   
   chart_devi = {
-    height: 600,
+    height: 500,
     width: 650,
     fontFamily: 'Nunito'
   };
@@ -217,7 +217,7 @@ export class AppComponent {
   
   chart_distri = {
     height: 500,
-    width: 800,
+    width: 650,
     fontFamily: 'Nunito',
     type: 'candlestick'
   };
