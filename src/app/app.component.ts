@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   title_time_series = {
-    text: 'Tourists from Asia (2010-2016)',
+    text: 'Tourists from Asia Arriving to Thailand (2010-2016)',
     align: 'center',
     style: {
       fontSize: 16
@@ -76,7 +76,7 @@ export class AppComponent {
   colors_line_europe = ['#39E6A5'];
   
   title_time_series_europe = {
-    text: 'Tourists from Europe (2010-2016)',
+    text: 'Tourists from Europe Arriving to Thailand (2010-2016)',
     align: 'center',
     style: {
       fontSize: 16
@@ -95,7 +95,7 @@ export class AppComponent {
   colors_line_america = ['#FEBC45'];
   
   title_time_series_america = {
-    text: 'Tourists from Americas (2010-2016)',
+    text: 'Tourists from Americas Arriving to Thailand (2010-2016)',
     align: 'center',
     style: {
       fontSize: 16
@@ -112,7 +112,7 @@ export class AppComponent {
   /** part-to-whole | tourists in all region */
   
   title_pie = {
-    text: 'Tourists from Overseas (2010-2016)',
+    text: 'Tourists from Overseas Arriving to Thailand (2010-2016)',
     align: 'center',
     style: {
       fontSize: 16
@@ -123,6 +123,20 @@ export class AppComponent {
     width: 450,
     type: 'pie',
     fontFamily: 'Nunito'
+  };
+
+  dataLabels_pie = {
+    enabled: true
+  };
+
+  legend_pie = {
+    position: 'right',
+    offsetY: 25
+  };
+
+  legend_pie_asia = {
+    position: 'bottom',
+    offsetY: 0
   };
   
   labels_region = ['Asia', 'Europe', 'Americas', 'Oceania', 'Africa'];
@@ -145,6 +159,27 @@ export class AppComponent {
   ];
   
   series_pie = [116547972, 39592716, 7813640, 6565119, 1083600];
+
+  /** part-to-whole - country */
+   
+  title_pie_country = {
+    text: 'Tourists from East Asia Arriving to Thailand (2010-2016)',
+    align: 'center',
+    style: {
+      fontSize: 16
+    }
+  };
+  
+  chart_pie_country = {
+    width: 440,
+    type: 'pie',
+    fontFamily: 'Nunito'
+  };
+  
+  labels_country = ['China', 'Japan', 'Korea', 'Hong Kong', 'Taiwan', 'Others'];
+  
+  
+  series_pie_country = [31630027, 9102856, 8245240, 3695757, 3185941, 389177];
   
   /** deviation */
   
@@ -159,7 +194,7 @@ export class AppComponent {
   
   chart_devi = {
     height: 500,
-    width: 650,
+    width: 750,
     fontFamily: 'Nunito'
   };
   
@@ -287,7 +322,7 @@ export class AppComponent {
   };
   
   title_distri = {
-    text: 'Tourists from China for Each Months Distribution',
+    text: 'Tourists from China Arriving to Thailand for Each Month Distribution',
     align: 'center',
     style: {
       fontSize: 14
