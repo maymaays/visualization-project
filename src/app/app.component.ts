@@ -22,7 +22,7 @@ export class AppComponent {
     width: 600,
     fontFamily: 'Nunito'
   };
-
+  
   colors_bar = ['#FF4560'];
   
   /** tourists in asia */
@@ -126,16 +126,16 @@ export class AppComponent {
     type: 'pie',
     fontFamily: 'Nunito'
   };
-
+  
   dataLabels_pie = {
     enabled: true
   };
-
+  
   legend_pie = {
     position: 'right',
     offsetY: 25
   };
-
+  
   legend_pie_asia = {
     position: 'bottom',
     offsetY: 0
@@ -161,9 +161,9 @@ export class AppComponent {
   ];
   
   series_pie = [116547972, 39592716, 7813640, 6565119, 1083600];
-
+  
   /** part-to-whole - country */
-   
+  
   title_pie_country = {
     text: 'Tourists from East-Asia Arriving in Thailand (2010-2016)',
     align: 'center',
@@ -177,11 +177,17 @@ export class AppComponent {
     type: 'pie',
     fontFamily: 'Nunito'
   };
-
-  colors_pie_country = ['#FF4560', '#00E396', '#FEB019', '#008FFB', '#775DD0', '#4a2d27']; 
+  
+  colors_pie_country = [
+    '#FF4560',
+    '#00E396',
+    '#FEB019',
+    '#008FFB',
+    '#775DD0',
+    '#4a2d27'
+  ];
   
   labels_country = ['China', 'Japan', 'Korea', 'Hong Kong', 'Taiwan', 'Others'];
-  
   
   series_pie_country = [31630027, 9102856, 8245240, 3695757, 3185941, 389177];
   
@@ -240,7 +246,7 @@ export class AppComponent {
         fontSize: 16
       }
     },
-    categories: [2010, 2011, 2012, 2013, 2014, 2015, 2016],
+    categories: [2010, 2011, 2012, 2013, 2014, 2015, 2016]
   };
   
   legend_devi = {
@@ -251,8 +257,8 @@ export class AppComponent {
     offsetX: 0,
     offsetY: 0
   };
-
-  colors_devi = ['#FF4560', '#008FFB', '#f6ed95']; 
+  
+  colors_devi = ['#FF4560', '#008FFB', '#f6ed95'];
   
   /** distribution */
   
@@ -262,7 +268,7 @@ export class AppComponent {
     fontFamily: 'Nunito',
     type: 'candlestick'
   };
-
+  
   series_distri = [
     {
       data: [
@@ -328,13 +334,14 @@ export class AppComponent {
   };
   
   title_distri = {
-    text: 'Distribution of Tourists from China Arriving in Thailand for Each Month',
+    text:
+      'Distribution of Tourists from China Arriving in Thailand for Each Month',
     align: 'center',
     style: {
       fontSize: 14
     }
   };
-
+  
   subtitle_distri = {
     text: '(2010-2016)',
     align: 'center',
@@ -366,21 +373,21 @@ export class AppComponent {
       formatter: this.formatter
     }
   };
-
+  
   /** distri-europe */
-
+  
   chart_est_asia = {
     height: 500,
     width: 500,
     type: 'bar',
     events: {
-        click: (chart: any, w: any, e: any) => {
-            console.log(chart, w, e );
-        }
+      click: (chart: any, w: any, e: any) => {
+        console.log(chart, w, e);
+      }
     },
     fontFamily: 'Nunito'
   };
-
+  
   title_est_asia = {
     text: 'Distribution of Tourists from East-Asian Countries (2010-2016)',
     align: 'center',
@@ -388,80 +395,90 @@ export class AppComponent {
       fontSize: 14
     }
   };
-
+  
   colors_est_asia = ['#FF4560', '#00E396', '#FEB019', '#008FFB', '#775DD0'];
-
+  
   plotOptions_est_asia = {
     bar: {
-        columnWidth: '45%',
-        distributed: true
+      columnWidth: '45%',
+      distributed: true
     }
   };
-
+  
   dataLabels_est_asia = {
-    enabled: false,
+    enabled: false
   };
-
-  series_est_asia = [{
-    name: ['Tourists'],
-    data: [31630027, 9102856, 8245240, 3695757, 3185941]
-  }];
-
+  
+  series_est_asia = [
+    {
+      name: ['Tourists'],
+      data: [31630027, 9102856, 8245240, 3695757, 3185941]
+    }
+  ];
+  
   subtitle_est_asia = {
     text: '(Actual)',
     align: 'center',
     style: {
       fontSize: 14
     }
-  }
-
+  };
+  
   subtitle_est_asia_normalize = {
     text: '(Proportion)',
     align: 'center',
     style: {
       fontSize: 14
     }
-  }
-
+  };
+  
   xaxis_est_asia = {
     categories: ['China', 'Japan', 'Korea', 'Hong Kong', 'Taiwan'],
     labels: {
-        style: {
-            colors: this.colors_est_asia,
-            fontSize: '12px'
-        }
+      style: {
+        colors: this.colors_est_asia,
+        fontSize: '12px'
+      }
     },
     title: {
       text: 'Country',
       style: {
         fontSize: '14px'
-    }
+      }
     }
   };
-
-  colors_est_asia_normalize = ['#008FFB', '#FEB019', '#775DD0', '#00E396', '#FF4560'];
-
+  
+  colors_est_asia_normalize = [
+    '#008FFB',
+    '#FEB019',
+    '#775DD0',
+    '#00E396',
+    '#FF4560'
+  ];
+  
   xaxis_est_asia_normalize = {
     categories: ['Hong Kong', 'Korea', 'Taiwan', 'Japan', 'China'],
     labels: {
-        style: {
-            colors: this.colors_est_asia_normalize,
-            fontSize: '12px'
-        }
+      style: {
+        colors: this.colors_est_asia_normalize,
+        fontSize: '12px'
+      }
     },
     title: {
       text: 'Country',
       style: {
         fontSize: '14px'
-    }
+      }
     }
   };
-
-  series_est_asia_normalize = [{
-    name: ['Tourists (%)'],
-    data: [0.49, 0.16 ,0.13 ,0.07 ,0.02]
-  }]
-
+  
+  series_est_asia_normalize = [
+    {
+      name: ['Tourists (%)'],
+      data: [0.49, 0.16, 0.13, 0.07, 0.02]
+    }
+  ];
+  
   yaxis_est_asia = {
     tooltip: {
       enabled: true
@@ -469,14 +486,14 @@ export class AppComponent {
     title: {
       text: 'Number of Tourists',
       style: {
-        fontSize: 14,
+        fontSize: 14
       }
     },
     labels: {
       formatter: this.formatter
     }
   };
-
+  
   yaxis_est_asia_normalize = {
     tooltip: {
       enabled: true
@@ -490,99 +507,103 @@ export class AppComponent {
   };
   
   /** correlation */
-
+  
   chart_corre = {
     height: 350,
     width: 800,
     type: 'scatter',
     zoom: {
-        enabled: true,
-        type: 'xy'
+      enabled: true,
+      type: 'xy'
     },
     fontFamily: 'Nunito',
     style: {
       fontSize: 16
     }
   };
-
-  series_corre = [{
+  
+  series_corre = [
+    {
       name: 'ASIA',
-      data: [[2325.6,584383],
-      [5299.4,78262],
-      [781.6,3086608],
-      [7281,389177],
-      [1557,162446],
-      [4215.1,3695757],
-      [4952.9,6935485],
-      [6854,3205735],
-      [4312,936927],
-      [3585,9102856],
-      [5593,8245240],
-      [471,416879],
-      [1700.3,7251380],
-      [2221,1935010],
-      [3596,1314652],
-      [2261,207438],
-      [5875,519091],
-      [2109,2083269],
-      [6272.9,234192],
-      [2259,114888],
-      [4846,5824416],
-      [1105.9,473850]]
-   },
-   {
+      data: [
+        [2325.6, 584383],
+        [5299.4, 78262],
+        [781.6, 3086608],
+        [7281, 389177],
+        [1557, 162446],
+        [4215.1, 3695757],
+        [4952.9, 6935485],
+        [6854, 3205735],
+        [4312, 936927],
+        [3585, 9102856],
+        [5593, 8245240],
+        [471, 416879],
+        [1700.3, 7251380],
+        [2221, 1935010],
+        [3596, 1314652],
+        [2261, 207438],
+        [5875, 519091],
+        [2109, 2083269],
+        [6272.9, 234192],
+        [2259, 114888],
+        [4846, 5824416],
+        [1105.9, 473850]
+      ]
+    },
+    {
       name: 'EUROPE',
       data: [
-        [8445,680478],
-        [9097,677112],
-        [8631,1137578],
-        [7680,1015093],
-        [9390,4239594],
-        [8672,4973294],
-        [8705,1494968],
-        [8996,1495853],
-        [8608,986443],
-        [5085,8376029],
-        [10057,834734],
-        [8055,2425967],
-        [8929,1339108],
-        [9435,6307191]]
-  }];
-
+        [8445, 680478],
+        [9097, 677112],
+        [8631, 1137578],
+        [7680, 1015093],
+        [9390, 4239594],
+        [8672, 4973294],
+        [8705, 1494968],
+        [8996, 1495853],
+        [8608, 986443],
+        [5085, 8376029],
+        [10057, 834734],
+        [8055, 2425967],
+        [8929, 1339108],
+        [9435, 6307191]
+      ]
+    }
+  ];
+  
   xaxis_corre = {
-      tickAmount: 7,
-      labels: {
-          formatter: (val: string) => {
-              return parseFloat(val).toFixed(0)
-          }
-      },
-      title: {
-        text: 'Distance (KM)',
-        style: {
-          fontSize: 14
-        }
+    tickAmount: 7,
+    labels: {
+      formatter: (val: string) => {
+        return parseFloat(val).toFixed(0);
       }
-  }; 
-
+    },
+    title: {
+      text: 'Distance (KM)',
+      style: {
+        fontSize: 14
+      }
+    }
+  };
+  
   legend_corre = {
     position: 'top',
     offsetY: 0
   };
-
+  
   yaxis_corre = {
-      tickAmount: 5,
-      title: {
-        text: 'Number of Tourists',
-        style: {
-          fontSize: 14
-        }
-      },
-      labels: {
-        formatter: this.formatter
+    tickAmount: 5,
+    title: {
+      text: 'Number of Tourists',
+      style: {
+        fontSize: 14
       }
+    },
+    labels: {
+      formatter: this.formatter
+    }
   };
-
-
+  
   /** geo */
   
   chart = {
@@ -633,8 +654,9 @@ export class AppComponent {
         }
       },
       backgroundColor: '#c6e2ff'
-    },
+    }
   };
+  
   
   
 
