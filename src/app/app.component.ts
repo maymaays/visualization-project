@@ -39,7 +39,7 @@ export class AppComponent {
     title: {
       text: 'Year',
       style: {
-        fontSize: 16
+        fontSize: 14
       }
     }
   };
@@ -56,7 +56,7 @@ export class AppComponent {
     title: {
       text: 'Number of Tourists',
       style: {
-        fontSize: 16
+        fontSize: 14
       }
     },
     labels: {
@@ -234,7 +234,7 @@ export class AppComponent {
     title: {
       text: 'Difference of Tourists (%)',
       style: {
-        fontSize: 16
+        fontSize: 14
       }
     }
   };
@@ -243,7 +243,7 @@ export class AppComponent {
     title: {
       text: 'Year',
       style: {
-        fontSize: 16
+        fontSize: 14
       }
     },
     categories: [2010, 2011, 2012, 2013, 2014, 2015, 2016]
