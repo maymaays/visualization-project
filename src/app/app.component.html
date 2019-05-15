@@ -52,7 +52,7 @@
                 </div>
             </div>
             <div class="col-sm-4 margin-pie">
-                <apx-chart id="part-to-whole-region" [dataLabels]="dataLabels_pie" [legend]="legend_pie" [chart]="chart_pie" [labels]="labels_region" [responsive]="responsive" [title]="title_pie" [series]="series_pie">
+                <apx-chart id="part-to-whole-region" [colors]="colors_pie_country" [dataLabels]="dataLabels_pie" [legend]="legend_pie" [chart]="chart_pie" [labels]="labels_region" [responsive]="responsive" [title]="title_pie" [series]="series_pie">
                 </apx-chart>
             </div>
         </div>
@@ -63,13 +63,13 @@
         <div class="margin-top-region  text-center">
                 <img src="./assets/images/elephant-2.png" class="text-center region-img img-responsive">
         </div>
-        <h2 class="text text-center">land of smile tourist arrivals from ASIA</h2>
+        <h2 class="text text-center">asian tourist in thailand</h2>
         <div class="row">
             <div class="col">
             </div>
             <div class="col margin-top-region">
                   
-                    <apx-chart id="time-series-bar" [responsive]="responsive" [series]="series_time_series" [chart]="chart_bar" [title]="title_time_series" [xaxis]="xaxis_time_series" [yaxis]="yaxis_time_series">
+                    <apx-chart id="time-series-bar" [colors]="colors_bar" [responsive]="responsive" [series]="series_time_series" [chart]="chart_bar" [title]="title_time_series" [xaxis]="xaxis_time_series" [yaxis]="yaxis_time_series">
                         </apx-chart>
             </div>
             <div class="col">
@@ -81,17 +81,17 @@
             <div class="margin-top-region  text-center">
                     <img src="./assets/images/thailand-3.png" class="text-center region-img img-responsive">
             </div>
-        <h2 class="text text-center">Trend of Thailand tourist arrivals from Europe and Americas</h2>
+        <h2 class="text text-center">Trend of tourist arrivals from Europe and Americas</h2>
         <br>
         <div class="row">
             <div class="col">
             </div>
             <div class="col">
-                <apx-chart id="time-series-line" [series]="series_time_series_europe" [chart]="chart_line" [title]="title_time_series_europe" [xaxis]="xaxis_time_series" [yaxis]="yaxis_time_series" [colors]="colors_line_europe">
+                <apx-chart id="time-series-line" [responsive]="responsive" [series]="series_time_series_europe" [chart]="chart_line" [title]="title_time_series_europe" [xaxis]="xaxis_time_series" [yaxis]="yaxis_time_series" [colors]="colors_line_europe">
                 </apx-chart>
             </div>
             <div class="col">
-                <apx-chart id="time-series-line" [series]="series_time_series_america" [chart]="chart_line" [title]="title_time_series_america" [xaxis]="xaxis_time_series" [yaxis]="yaxis_time_series" [colors]="colors_line_america">
+                <apx-chart id="time-series-line" [responsive]="responsive" [series]="series_time_series_america" [chart]="chart_line" [title]="title_time_series_america" [xaxis]="xaxis_time_series" [yaxis]="yaxis_time_series" [colors]="colors_line_america">
                 </apx-chart>
             </div>
             <div class="col">
@@ -108,7 +108,7 @@
             <div class="col">  
             </div>
             <div class="col margin-top-region">
-                    <apx-chart id="part-to-whole-asia"  [dataLabels]="dataLabels_pie" [legend]="legend_pie_asia" [chart]="chart_pie_country" [labels]="labels_country" [responsive]="responsive" [title]="title_pie_country" [series]="series_pie_country">
+                    <apx-chart id="part-to-whole-asia"  [colors]="colors_pie_country" [responsive]="responsive" [dataLabels]="dataLabels_pie" [legend]="legend_pie_asia" [chart]="chart_pie_country" [labels]="labels_country" [responsive]="responsive" [title]="title_pie_country" [series]="series_pie_country">
                         </apx-chart>
         
             </div>
@@ -140,15 +140,15 @@
             <div class="margin-top-region text-center">
                     <img src="./assets/images/wat-arun.png" class="text-center region-img img-responsive">
             </div>
-        <h2 class="text text-center">Geo Chart</h2>
+        <h2 class="text text-center">China Size and Location</h2>
         <div class="row margin-top-region">
             <div class="col"></div>
-            <div class="col">
+            <div class="col margin-top-region">
                     <google-chart width="600" height="450" [title]="chart.title" [type]="chart.type" [data]="chart.data" [columnNames]="chart.columnNames" [roles]="chart.roles" [options]="chart.options">
                     </google-chart>
                 </div>
-            <div class="col">
-                    <apx-chart id="china-distri" [series]="series_distri" [chart]="chart_distri" [title]="title_distri" [xaxis]="xaxis_distri" [yaxis]="yaxis_distri" [plotOptions]="plotOptions">
+            <div class="col margin-top-region">
+                    <apx-chart id="china-distri" [responsive]="responsive" [series]="series_distri" [subtitle]="subtitle_distri" [chart]="chart_distri" [title]="title_distri" [xaxis]="xaxis_distri" [yaxis]="yaxis_distri" [plotOptions]="plotOptions">
                         </apx-chart>
             </div>
             <div class="col"></div>
@@ -160,7 +160,7 @@
                     <div class="margin-top-region text-center">
                             <img src="./assets/images/autorickshaw.png" class="text-center region-img img-responsive">
                     </div>
-                <h2 class="text text-center">Distribution</h2>
+                <h2 class="text text-center">Distribution among East-asian countries</h2>
 
                 <div class="card card-china">
                     <div class="card-body">
@@ -169,12 +169,12 @@
                                         </div>
             
                                 <div class="col margin-top-region">
-                                        <apx-chart id="est-asia-distri" [series]="series_est_asia" [chart]="chart_est_asia" [title]="title_est_asia" [xaxis]="xaxis_est_asia" [yaxis]="yaxis_est_asia" [plotOptions]="plotOptions_est_asia" [dataLabels]="dataLabels_est_asia">
+                                        <apx-chart id="est-asia-distri" [colors]="colors_est_asia" [responsive]="responsive" [subtitle]="subtitle_est_asia" [series]="series_est_asia" [chart]="chart_est_asia" [title]="title_est_asia" [xaxis]="xaxis_est_asia" [yaxis]="yaxis_est_asia" [plotOptions]="plotOptions_est_asia" [dataLabels]="dataLabels_est_asia">
                                             </apx-chart>
                                 </div>
                                   
                                 <div class="col margin-top-region">
-                                        <apx-chart id="est-asia-distri-normalize" [series]="series_est_asia_normalize" [chart]="chart_est_asia" [title]="title_est_asia" [xaxis]="xaxis_est_asia" [yaxis]="yaxis_est_asia_normalize" [plotOptions]="plotOptions_est_asia" [dataLabels]="dataLabels_est_asia">
+                                        <apx-chart id="est-asia-distri-normalize"  [colors]="colors_est_asia_normalize" [responsive]="responsive" [subtitle]="subtitle_est_asia_normalize" [series]="series_est_asia_normalize" [chart]="chart_est_asia" [title]="title_est_asia" [xaxis]="xaxis_est_asia_normalize" [yaxis]="yaxis_est_asia_normalize" [plotOptions]="plotOptions_est_asia" [dataLabels]="dataLabels_est_asia">
                                             </apx-chart>
                                 </div>
             
@@ -193,13 +193,13 @@
                 <div class="margin-top-region text-center">
                         <img src="./assets/images/wheat.png" class="text-center region-img img-responsive">
                 </div>
-            <h2 class="text text-center">Deviation</h2>
+            <h2 class="text text-center">Deviation among China, Hong Kong and Japan</h2>
             <div class="row margin-top-region">
                     <div class="col">
                     </div>
                     <div class="col margin-top-region">
                        
-                                    <apx-chart id="deviation" [chart]="chart_devi" [legend]="legend_devi" [title]="title_devi" [series]="series_devi" [xaxis]="xaxis_devi" [yaxis]="yaxis_devi">
+                                    <apx-chart id="deviation" [colors]="colors_devi" [responsive]="responsive" [chart]="chart_devi" [legend]="legend_devi" [title]="title_devi" [series]="series_devi" [xaxis]="xaxis_devi" [yaxis]="yaxis_devi">
                                         </apx-chart>      
                            
                     </div>
@@ -212,11 +212,10 @@
     
     <div class="container-fluid bg-grey">
         <h2 class="text margin-top-region text-center">Visualization Final Project</h2>
-        <div class="row">
-    
+        <div class="row margin-top-region">
         </div>
     </div>
     
     
-    <!-- <apx-chart id="corre" [series]="series_corre" [chart]="chart_corre" [title]="title_est_asia" [xaxis]="xaxis_corre" [yaxis]="yaxis_corre" [plotOptions]="plotOptions_est_asia" [dataLabels]="dataLabels_est_asia">
-                </apx-chart>  -->
+    <apx-chart id="corre" [series]="series_corre" [chart]="chart_corre" [responsive]="responsive" [title]="title_est_asia" [xaxis]="xaxis_corre" [yaxis]="yaxis_corre" [plotOptions]="plotOptions_est_asia" [dataLabels]="dataLabels_est_asia">
+                </apx-chart> 
