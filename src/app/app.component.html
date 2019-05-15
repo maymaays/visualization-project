@@ -211,11 +211,28 @@
 
     
     <div class="container-fluid bg-grey">
-        <h2 class="text margin-top-region text-center">Visualization Final Project</h2>
+            <div class="margin-top-region text-center">
+                    <img src="./assets/images/lotus.png" class="text-center region-img img-responsive">
+            </div>
+        <h2 class="text text-center">Relation between Distance and Number of Tourists</h2>
         <div class="row margin-top-region">
+            <div class="col"></div>
+            <div class="col">
+                    <apx-chart id="corre" [legend]="legend_corre" [series]="series_corre" [chart]="chart_corre" [responsive]="responsive" [title]="title_est_asia" [xaxis]="xaxis_corre" [yaxis]="yaxis_corre" [plotOptions]="plotOptions_est_asia" [dataLabels]="dataLabels_est_asia">
+                </apx-chart> 
+            </div>
+            <div class="col"></div>
         </div>
     </div>
+
+    <div class="container-fluid">
+            <div class="text-center">
+                    <div class="margin-top-region text-center">
+                            <img src="./assets/images/thai.png" class="text-center region-img img-responsive">
+                    </div>
+                <h2 class="text text-center">visualization final project</h2>
+            </div>
+        </div>
     
     
-    <apx-chart id="corre" [series]="series_corre" [chart]="chart_corre" [responsive]="responsive" [title]="title_est_asia" [xaxis]="xaxis_corre" [yaxis]="yaxis_corre" [plotOptions]="plotOptions_est_asia" [dataLabels]="dataLabels_est_asia">
-                </apx-chart> 
+    

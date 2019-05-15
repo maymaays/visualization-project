@@ -493,10 +493,15 @@ export class AppComponent {
 
   chart_corre = {
     height: 350,
+    width: 800,
     type: 'scatter',
     zoom: {
         enabled: true,
         type: 'xy'
+    },
+    fontFamily: 'Nunito',
+    style: {
+      fontSize: 16
     }
   };
 
@@ -545,16 +550,36 @@ export class AppComponent {
   }];
 
   xaxis_corre = {
-      tickAmount: 10,
+      tickAmount: 7,
       labels: {
-          formatter: function(val) {
-              return parseFloat(val).toFixed(1)
+          formatter: (val: string) => {
+              return parseFloat(val).toFixed(0)
           }
+      },
+      title: {
+        text: 'Distance (KM)',
+        style: {
+          fontSize: 14
+        }
       }
   }; 
 
+  legend_corre = {
+    position: 'top',
+    offsetY: 0
+  };
+
   yaxis_corre = {
-      tickAmount: 7
+      tickAmount: 5,
+      title: {
+        text: 'Number of Tourists',
+        style: {
+          fontSize: 14
+        }
+      },
+      labels: {
+        formatter: this.formatter
+      }
   };
 
 
