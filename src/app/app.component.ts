@@ -521,6 +521,14 @@ export class AppComponent {
       fontSize: 16
     }
   };
+
+  title_corre = {
+    text: 'Relationship between Distance and Number of Tourists (2010-2016)',
+    align: 'center',
+    style: {
+      fontSize: 14
+    }
+  };
   
   series_corre = [
     {
